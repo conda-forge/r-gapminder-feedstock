@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gapminder_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gapminder/gapminder_{{ version }}.tar.gz
-  sha256: 90e82fb90f795be8121b05ec24db749d5767289fd6b00b5d38f27c12656b97c2
+  sha256: edd138576fcff02ac41f9580dbd9713f3e98a9bd32039decd098078b421a351f
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
